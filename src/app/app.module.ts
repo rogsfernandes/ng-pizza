@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from "./shared/templates/layout.component";
 import { HeaderComponent } from './shared/components/header/header.component';
+import { LinkComponent } from './shared/components/link/link.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    HeaderComponent
+    HeaderComponent,
+    LinkComponent
   ],
   imports: [
     BrowserModule,

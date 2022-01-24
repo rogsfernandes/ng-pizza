@@ -1,9 +1,13 @@
 # la-pizza-mia
 Choose your own pizza toppings in this cool Angular App.
 
-## Default Angular README:
+Component Design:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+- Atoms: Independent components, that does one thing very well (e.g. a Button). Shared across the entire app and used to create composition.
+- Molecules: Simple composition of components that have interdependencies between each other (e.g. Search Bar)
+- Organisms: Containers that have state and internal logic to make handle it's own responsabilities (e.g. ToDo List)
+- Pages: Route that can contain multiple organisms to give customer the ability of operating several things
+- Templates: Layout basis for different pages
 
 ## Development server
 
@@ -20,10 +24,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
