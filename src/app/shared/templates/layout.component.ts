@@ -1,9 +1,12 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-layout.component.ts",
+  selector: 'mia-layout',
   styles: [],
-  template: ``,
+  template: `
+    <mia-header></mia-header>
+    <ng-content></ng-content>
+  `,
 })
 export class LayoutComponent implements OnInit {
   constructor() {}
