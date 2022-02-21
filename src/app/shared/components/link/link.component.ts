@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'mia-link',
@@ -7,10 +7,11 @@ import { Component, Input } from '@angular/core';
       ><ng-content></ng-content
     ></a>
   `,
-  styles: ['.link-active { font-weight: 700;}'],
+  styles: ['.link-active { font-weight: 700;}', 'a{ color: color }'],
 })
 export class LinkComponent {
   @Input() path = '';
+  @Input() color = 'inherit';
 
   activeClass = 'active-link';
 
