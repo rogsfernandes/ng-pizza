@@ -8,7 +8,7 @@ import { LayoutComponent } from '@shared/templates/layout.component';
 import { HeaderComponent } from '@shared/components/header/header.component';
 import { LinkComponent } from '@shared/components/link/link.component';
 import { ButtonComponent } from '@shared/components/button/button.component';
-import { IconButtonComponent } from '@shared/components/icon-button/icon-button.component';
+import { IconButton } from '@shared/components/icon-button/icon-button';
 
 import { HomeComponent } from '@pages/home/home.component';
 import { FavsComponent } from '@pages/favs/favs.component';
@@ -26,7 +26,7 @@ import { MountComponent } from '@pages/mount/mount.component';
     NotFoundComponent,
     MountComponent,
     ButtonComponent,
-    IconButtonComponent,
+    IconButton,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
