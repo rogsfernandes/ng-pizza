@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FavsComponent } from './pages/favs/favs.component';
-import { HomeComponent } from './pages/home/home.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { FavsComponent } from 'app/pages/favs/favs.component';
+import { HomeComponent } from 'app/pages/home/home.component';
+import { MountComponent } from 'app/pages/mount/mount.component';
+import { NotFoundComponent } from 'app/pages/not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'favs', component: FavsComponent },
+  { path: 'mount', component: MountComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
