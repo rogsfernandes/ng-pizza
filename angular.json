@@ -7,7 +7,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pizza-mia": {
+    "ng-pizza": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -27,7 +27,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pizza-mia",
+            "outputPath": "dist/ng-pizza",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -79,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pizza-mia:build:production"
+              "browserTarget": "ng-pizza:build:production"
             },
             "development": {
-              "browserTarget": "pizza-mia:build:development"
+              "browserTarget": "ng-pizza:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -90,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pizza-mia:build"
+            "browserTarget": "ng-pizza:build"
           }
         },
         "test": {
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "pizza-mia"
+  "defaultProject": "ng-pizza"
 }

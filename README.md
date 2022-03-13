@@ -1,4 +1,4 @@
-# la-pizza-mia
+# ng-pizza
 Choose your own pizza toppings in this cool Angular App.
 
 Component Design:
